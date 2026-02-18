@@ -11,7 +11,7 @@ This repository contains the Verilog source code and XDC constraints for a Basys
 - `src/`  
   Verilog modules (top-level + helpers such as mux/anode driver/hex-to-7seg decoder)
 - `constraints/`  
-  `bruh.xdc` pin constraints (IOSTANDARD + PACKAGE_PIN mappings)
+  `constr.xdc` pin constraints (IOSTANDARD + PACKAGE_PIN mappings)
 
 ## Top-level I/O (edit to match your design)
 Expected top module ports typically look like:
@@ -21,14 +21,14 @@ Expected top module ports typically look like:
 - `output [6:0] C`  (segments a..g) OR `[7:0]` if you include DP
 - optionally other signals like `dig[4][3:0]` or per-digit values
 
-If your port names differ, update `constraints/bruh.xdc` accordingly.
+If your port names differ, update `constraints/constr.xdc` accordingly.
 
 ## How to build/program (Vivado)
 1. Open Vivado
 2. Create a new project (RTL Project)
 3. Add files:
    - Add all files in `src/`
-   - Add `constraints/bruh.xdc` as constraints
+   - Add `constraints/constr.xdc` as constraints
 4. Select board/part:
    - Basys3 (Artix-7, typically `xc7a35tcpg236-1`)
 5. Run:
