@@ -1,0 +1,24 @@
+# Vivado generated
+.Xil/
+*.jou
+*.log
+*.str
+*.zip
+*.tmp
+
+# Project generated dirs (if you ever put the whole project here)
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+*.gen/
+*.sdk/
+*.xpr
+*.os
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
