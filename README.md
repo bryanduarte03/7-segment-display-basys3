@@ -36,7 +36,7 @@ If your port names differ, update `constraints/bruh.xdc` accordingly.
 6. Open Hardware Manager and program the board with the generated `.bit`
 
 ## Notes about constraints
-`constraints/bruh.xdc` sets:
+`constraints/cnstr.xdc` sets:
 - `IOSTANDARD LVCMOS33` for Basys3 I/O
 - `PACKAGE_PIN` mappings for:
   - 7-seg anodes (`AN[3:0]`)
@@ -44,9 +44,3 @@ If your port names differ, update `constraints/bruh.xdc` accordingly.
   - clock `clk`
   - reset `reset`
 Make sure your top module port names match exactly what the XDC uses.
-
-## Screenshots / Demo
-(Optional) Add a photo/gif of the Basys3 running your design here.
-
-## License
-(Optional) Choose a license (MIT is common for class projects).
